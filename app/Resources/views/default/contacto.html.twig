@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contacto{% endblock %}
+ 
+{% block body %}
+
+	<main>
+			<form id="formulario">
+			<div class="conten">
+				<div class="input">
+					<label for="nombre_id">Su Nombre</label>
+					<input type="text" name="nombre" id="nombre_id" required="">
+				</div>
+				<div class="input">
+					<label for="email_id">Email</label>
+					<input type="email" name="email" id="email_id" required="">
+				</div>
+				<div class="input">
+					<label for="telefono_id">Asunto</label>
+					<input type="tel" name="telefono" id="telefono_id" required="">
+				</div>
+				
+				<div class="input">
+					<label>Su Mensaje</label>
+					<textarea id="text_area" name="mensaje"  cols="80" rows="20" maxlength="500"></textarea>
+				</div>
+				<div class="enviar">
+					<input id="enviar" type="submit" name="enviar" value="Enviar">
+				</div>
+			</div>
+		</form>
+		
+			<hr>
+		</main>
+	</div>
+	
+{% endblock %}

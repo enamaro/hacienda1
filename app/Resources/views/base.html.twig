@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Hacienda Guadalupe{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/slick/slick.css')}}"/>
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/slick/slick-theme.css')}}"/>
+            <link rel="stylesheet" type="text/css" href="{{ asset('css/estilos.css')}}">
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        
+            <div class="contenido">
+        <header id="cabecera">
+            <div class="cabecera">
+                <h1><img src="{{ asset('images/logo.png')}}" alt="Logo"></h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="activo"><a href="{{ path('index')}}" target="_blank">INICIO</a></li>
+                    <li><a href="{{ path('sobre_nosotros')}}" target="_blank">SOBRE NOSOTROS</a></li>
+                    <li><a href="{{ path('donde_estamos')}}" target="_blank">DONDE ESTAMOS</a></li>
+                    <li><a href="{{ path('contacto')}}" target="_blank">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        {% block body %}
+
+        {% endblock %}
+            </div>
+        <footer class="pie">
+            <div class="texto_pie">
+                <img src="{{ asset('images/logo_footer.png')}}">
+                <p>&copy; 2018 Hacienda Nuestra Señora de Guadalupe.</p>
+            </div>
+        </footer>
+        {% block javascripts %}
+            <script type="text/javascript" src="{{ asset('js/jquery.js')}}"></script>
+            <script type="text/javascript" src="{{ asset('js/slick/slick.min.js')}}"></script>
+            <script src="{{ asset('js/js.cookie.js')}}"></script>
+            <script type="text/javascript" src="{{ asset('js/script.js')}}"></script>
+        {% endblock %}
+        
+    </body>
+</html>

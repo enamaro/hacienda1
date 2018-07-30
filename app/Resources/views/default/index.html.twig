@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hacienda Guadalupe{% endblock %}
+
+    {% block body %}
+
+        <main>
+
+            <div class="autoplay">
+              <div><img  src = "{{ asset('images/slide1.png')}}"></div>
+              <div><img  src = "{{ asset('images/slide2.png')}}"></div>
+              <div><img  src = "{{ asset('images/slide3.png')}}"></div>
+            </div>
+             
+            <div class="contenedor">
+                <div class="imagenes">
+                    <h2 class="titulo_imagen">HACIENDA</h2>
+                    <img src="{{ asset('images/hacienda.jpg')}}" alt="imagen hacienda" class="img">
+                    <p class="texto">
+                        Hacienda del Siglo XVIII situada en Sevilla, que principalmente se había destiando al cultivo del olivar.
+                    </p>
+                    <div class="leer_mas"><a class="leer_mas" href="#">LEER MAS</a></div>
+                </div>
+                <div class="imagenes">
+                    <h2 class="titulo_imagen">BODAS</h2>
+                    <img src="{{ asset('images/bodas.jpg')}}" alt="imagen bodas" class="img">
+                    <p class="texto">
+                        El mejor enclave para la celebración de tu boda. Reformada para acoger tu boda con las mayores comodidades.
+                    </p>
+                    <div class="leer_mas"><a class="leer_mas" href="#">LEER MAS</a></div>
+                </div>
+                <div class="imagenes">
+                    <h2 class="titulo_imagen">EVENTOS</h2>
+                    <img src="{{ asset('images/eventos.jpg')}}" alt="imagen eventos" class="img">
+                    <p class="texto">
+                        Preparada para albergar cualquier evento importante: Reuniones de empresa, Bodas, Bautizos, fiestas y celebraciones.
+                    </p>
+                    <div class="leer_mas"><a class="leer_mas" href="#">LEER MAS</a></div>
+                </div>
+                <div class="imagenes">
+                    <h2 class="titulo_imagen">COMO LLEGAR</h2>
+                    <img src="{{ asset('images/mapa.jpg')}}" alt="imagen mapa" class="img">
+                    <p class="texto">
+                        Situada a 4km de Sevilla, posee un amplio patio de limoneros y jardines ideal para los aperitivos de tu boda al aire libre.
+                    </p>
+                    <div class="leer_mas"><a class="leer_mas" href="#">LEER MAS</a></div>
+                </div>
+            </div>
+            <hr>
+        </main>
+    
+    {% endblock %}
+
